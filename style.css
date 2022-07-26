@@ -215,6 +215,8 @@ ul li a:hover {
     animation: fade-right 1s ease-in-out;
 }
 
+
+
 .content {
     width: 1200px;
     height: auto;
@@ -292,7 +294,7 @@ ul li a:hover {
     font-family: sans-serif;
     text-align: center;
     font-size: 22px;
-    color: var(--col-orange);
+    color: var(--col-green);
     background-color: var(--col-white-dark);
     border-radius: 10px;
     margin: 2px;
@@ -358,17 +360,61 @@ ul li a:hover {
     text-align: center;
     font-size: 12px;
 }
-.icons a {
-    text-decoration: none;
-    color: var(--col-white);
+
+.about-svgs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
 }
-.icons ion-icon {
-     color: var(--col-white);
-     font-size: 20px;
-     padding-left: 10px;
-     padding-top: 3px;
-     transition: .3s ease;
+
+.about-svg--link {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    margin-top: -2rem;
+    border-radius: 50%;
+    fill: var(--col-white-dark);
+    transition: all .4s ease;
 }
-.icons ion-icon:hover {
-    color: var(--col-orange);
+
+
+
+.about-svg--link:hover {
+    fill: var(--col-orange);
 }
+
+@media screen and (max-width:990px) {
+   html {
+    font-size: 55%;
+   }
+    
+   .header {
+       padding: 1.5rem 2rem;
+   }
+   .navbar {
+       /* display: inline-block; */
+       position: absolute;
+       top: 100%;
+       right: 0;
+       width: 30rem;
+       height: calc(100vh-9.5rem);
+   }
+   .navbar a {
+       display: block;
+       margin: 1.5rem;
+       padding: .5rem;
+       font-size: 2rem;
+       
+   }
+}
+
+/* .svg-sample{
+    width: 3rem;
+    height: 3rem;
+    fill: var(--col-orange);
+} */
